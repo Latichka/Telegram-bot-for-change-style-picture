@@ -1,0 +1,61 @@
+import pymorphy2
+import re
+import psycopg2
+import sklearn
+import numpy as np
+
+
+from aiogram import Bot, types
+from aiogram.dispatcher import Dispatcher
+from aiogram.utils import executor
+import nest_asyncio
+from aiogram.dispatcher import FSMContext
+
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+bot = Bot('API')
+dp = Dispatcher(bot)
+
+@dp.message_handler(commands=['start']) #Явно указываем в декораторе, на какую команду реагируем. 
+async def send_welcome(message: types.Message):
+   await message.reply("Привет! Я бот для редактирования изображений, для выбора стиля обработки нажми /main_menu")
+   
+flag = True
+content_flag = False
+style_flag = False
+
+@dp.message_handler(content_types=['photo'])
+async def photo_processing(message):
+    global flag
+    global content_flag
+    global style_flag
+    if flag:
+      await message.photo[-1].download('content.jpg')
+      await message.answer(text='Получено изображение для редактирования. Теперь необходимо отправить изображение с нужным стилем.')
+      flag = False
+      content_flag = True  
+    else:
+      await message.photo[-1].download('style.jpg')
+      await message.answer(text='Изображением со нужным стилем получено. Для обработки нажми команду /processing')
+      flag = True
+      style_flag = True
+      
+@dp.message_handler(commands=['processing'])
+async def processing(message: types.Message):
+  try:
+    await message.answer(text='Изображение обрабатывается...')
+    run_style_transfer(cnn, cnn_normalization_mean, cnn_normalization_std,image_loader('content.jpg'), image_loader('style.jpg'), image_loader('content.jpg').clone())
+    img = open('content_fake.png', 'rb')
+    await bot.send_photo(message.chat.id, img)
+    await message.answer(text='Готово')
+  except:
+    await message.answer(text='Ошибка')
+    
+ nest_asyncio.apply()
+__import__('IPython').embed()
+
+if __name__ == '__main__':
+    executor.start_polling(dp, skip_updates=True)
+      
+
+   

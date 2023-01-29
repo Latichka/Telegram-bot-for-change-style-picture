@@ -18,3 +18,9 @@
 ![51014ce4-f3a9-438c-bc1d-f5dcf1e72d4c](https://user-images.githubusercontent.com/107867306/215352356-a2bcbab4-cceb-4ff6-8e06-bd7e0e6b1092.jpg)
 
 2.
+![cvetok-rozovoj-kamelii-s-listyami](https://user-images.githubusercontent.com/107867306/215352449-411fba9e-909a-4050-ae42-4167bc154b7c.jpg)
+![style](https://user-images.githubusercontent.com/107867306/215352467-62793026-475f-4550-8b49-824dc8bd40a0.jpeg)
+![46d39e78-f53a-492c-8c68-1669de3ce844](https://user-images.githubusercontent.com/107867306/215352476-216add00-7dd9-41d7-bc97-459b31d324ba.jpg)
+
+3.
+

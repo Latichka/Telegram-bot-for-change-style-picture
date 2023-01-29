@@ -12,8 +12,9 @@
 
 Результаты работы бота:
 1.
-![1e733dd8-b5cc-419d-8eeb-437034e552d2](https://user-images.githubusercontent.com/107867306/215352236-20069710-dd48-469d-b428-80ced20ada63.jpg)
-![264cc46a-510d-468a-bb49-edbf8540a76e](https://user-images.githubusercontent.com/107867306/215352240-199cac0b-ce7b-48b0-a816-80475f134ea6.jpg)
-![51014ce4-f3a9-438c-bc1d-f5dcf1e72d4c](https://user-images.githubusercontent.com/107867306/215352247-721bd172-fd83-40a0-96ea-dd7cd8f5a0eb.jpg)
+
+![1e733dd8-b5cc-419d-8eeb-437034e552d2](https://user-images.githubusercontent.com/107867306/215352344-7be1c7ee-6d6b-4750-abc1-a7042c49ccbc.jpg)
+![264cc46a-510d-468a-bb49-edbf8540a76e](https://user-images.githubusercontent.com/107867306/215352353-28509f94-bc54-4996-92d0-56fb464f36a3.jpg)
+![51014ce4-f3a9-438c-bc1d-f5dcf1e72d4c](https://user-images.githubusercontent.com/107867306/215352356-a2bcbab4-cceb-4ff6-8e06-bd7e0e6b1092.jpg)
 
 2.
